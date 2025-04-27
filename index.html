@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMMH's CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #007acc;
+            --link-color: rgb(36, 113, 180);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: white;
+            max-width: 48em;
+            padding: 2em;
+            padding-top: 2em;
+            margin: 0em auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        h2 {
+            text-decoration: 0.2em underline solid var(--accent-color);
+            margin-bottom: 0;
+        }
+
+        h3 {
+            margin-bottom: 0.5em;
+            border-bottom: 1px dotted rgba(127, 127, 127, 0.5);
+            text-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            margin-top: 0;
+            text-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 0.5em;
+            flex-wrap: wrap;
+        }
+
+        .subtitle>:not(:last-child) {
+            border-right: 1px dotted gray;
+            padding-right: 0.5em;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: underline dotted rgba(127, 127, 127, 0.5) 1px;
+            text-underline-offset: 0.25em;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .profile-pic {
+            min-width: 4em;
+            min-height: 4em;
+            max-width: 8em;
+            max-height: 8em;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.1);
+            aspect-ratio: 1 / 1;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 1 / 1;
+        }
+
+        .profile-details {
+            padding-left: 4em;
+        }
+
+        @media (max-width: 48em) {
+            .profile-details {
+                padding-left: 1em;
+            }
+        }
+
+        h1 {
+            font-size: 1.8em;
+            font-weight: 100;
+            font-family: 'Special Gothic Expanded One', sans-serif;
+            font-optical-sizing: auto;
+            line-height: 1;
+            letter-spacing: -0.05em;
+        }
+
+        ul {
+            padding-left: 2em;
+            list-style-type: square
+        }
+
+        .h2-container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            border-bottom: 1px dotted var(--accent-color);
+            margin-bottom: 2em;
+        }
+
+        .back-to-top {
+            /* font-size: smaller; */
+            text-decoration: none;
+            padding: 1em;
+            padding-top: 0;
+            padding-bottom: 0;
+            outline: 1px dotted color-mix(in srgb, var(--link-color) 25%, transparent);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: small;
+            color: rgba(127, 127, 127, 0.5);
+        }
+
+        /* #summary {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            border-left: 0.25em dotted rgba(127, 127, 127, 0.25);
+            border-right: 0.25em dotted rgba(127, 127, 127, 0.25);
+        } */
+
+        #summary a {
+            text-decoration: none;
+        }
+
+        #summary b {
+            font-weight: 500;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #121212;
+                /* background: black; */
+                color: #e0e0e0;
+            }
+
+            .container {
+                /* outline: 1px solid #333; */
+                background: #121212;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #fff;
+            }
+
+            h3 {
+                color: #99ddff;
+            }
+
+            a {
+                color: #99ddff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="top">
+
+        <div class="header">
+            <div class="profile-pic">
+                <!-- <img src="file:///run/user/1000/doc/f2de84b6/pic.jpg" alt="Profile picture"> -->
+                <img src="pic.jpg" alt="Profile picture">
+            </div>
+            <div class="profile-details">
+                <div>
+                    <h1>Seyed Mohammad Mahdi Hosseini</h1>
+                </div>
+                <div class="subtitle">
+                    <div><a href="mailto://i@smmh.it">i@smmh.it</a></div>
+                    <div><a href="https://github.com/smm-h">github/smm-h</a></div>
+                    <div>M.Sc. in C.E.</div>
+                    <div>Genoa, Italy</div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="section" id="summary">
+            <p>My name is Mahdi, and I am a <b>27</b> y/o <a href="#education">studying ⇣</a> <b>CE</b> in
+                UniGE. I was
+                born in Iran, and
+                when I was 11, I taught myself programming. Today, I live in Italy, and I am
+                actively <b>searching</b>
+                for an opportunity to put my <a href="#skills">skills ⇣</a> to work. I speak <b>three</b> <a
+                    href="#languages">languages ⇣</a> fluently, and I am learning <b>Italian</b>. My favorite
+                programming language is <b>Kotlin</b>, and I am also <a href="#projects">experienced
+                    ⇣</a> in
+                other technologies. I am passionate about
+                writing readable, modular, and <b>maintainable</b> code to create useful, beautiful, and <b>scalable</b>
+                software for nearly all platforms.</p>
+        </div>
+
+        <div class="section" id="projects">
+            <div class="h2-container">
+                <h2>Projects</h2>
+                <a href="#top" class="back-to-top">⇡</a>
+            </div>
+            <p>Over the years I've made many programs and games for desktop as well as Android. Here are a few:</p>
+            <ul>
+                <li><b>Mathpad</b>: mathematical framework for rendering equations, plotting, and solving problems</li>
+                <li><b>Neurarium</b>: neural networks from scratch, Kotlin</li>
+                <li><b>Mage</b>: cross-platform game engine, Kotlin</li>
+                <li><b>Nitron</b>: DBMS with novel features, Python</li>
+                <li><b>NiLeX</b>: lexer generator, Python</li>
+                <li><b>Kotson</b>: JSON library for Kotlin</li>
+                <li>Telegram bot engine, Kotlin</li>
+                <li>Markdown to HTML converter, Kotlin</li>
+            </ul>
+        </div>
+
+        <div class="section" id="skills">
+            <div class="h2-container">
+                <h2>Skills</h2> <a href="#top" class="back-to-top">⇡</a>
+            </div>
+            <ul>
+                <li>Languages: Kotlin, Java, Python, TypeScript, GML</li>
+                <li>Frameworks: Django, Flask, Express.js</li>
+                <li>DevOps: Docker, Ansible, Docker Swarm, CI/CD (GitHub Actions, GitLab CI)</li>
+                <li>Cloud: AWS (EC2, S3, Lambda), GCP</li>
+                <li>Databases: PostgreSQL, MongoDB, Redis</li>
+                <li>Other: Git, Gradle, Linux Debian, Markdown, YAML, HTTP, REST APIs, JTest, Agile methodologies</li>
+                <li>Other: Telegram Bot API</li>
+                <li>Foundations: relational alegbra</li>
+                <li>FOSS: LibreOffice</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="h2-container">
+                <h2>Hobbies and interests</h2>
+                <a href="#top" class="back-to-top">⇡</a>
+            </div>
+            <ul>
+                <li>
+                    <h3>Programming language design</h3>
+                    <p>
+                        Languages with paradigms such as <a
+                            href="https://en.wikipedia.org/wiki/Metaprogramming">meta-</a>, <a
+                            href="https://en.wikipedia.org/wiki/Homoiconicity">homoiconic</a>, <a
+                            href="https://en.wikipedia.org/wiki/Visual_programming_language">visual</a>, and
+                        <a href="https://en.wikipedia.org/wiki/Literate_programming">literate programming</a>; also a
+                        DSL
+                        from which one can generate a
+                        programming language, its compiler, and its LSP.
+                    </p>
+                </li>
+                <li>
+                    <h3>Developing interactive mathematics software</h3>
+                    <p>
+                        As an example, <a
+                            href="https://github.com/smm-h/jile/blob/main/src/jile/readme.md"><i>Jile</i></a> is a
+                        collection of formalizations of interrelated
+                        mathematical subjects such as set theory, abstract algebra, and
+                        analytical geometry, written purely in Java and with no dependencies. It
+                        was a predecessor to <a href="https://github.com/smm-h/squiggle"><i>Squiggle</i></a> which is a
+                        similar project written entirely in Kotlin, featuring a cross-platform GUI.
+                    </p>
+                </li>
+                <li>
+                    <h3>Game development</h3>
+                    <p>
+                        I enjoy developing small and indie games that feature multiplayer,
+                        turn-based strategy, puzzle, and procedurally generated themes. I also
+                        1/2like to develop effective yet efficient AI adversaries for them using various algorithms such
+                        as A* and minimax.
+                    </p>
+                </li>
+                <li>
+                    <h3>Developing methods for data visualization</h3>
+                    <p>
+                        I like creating tools that can generate high-quality still as well as animated imagery from
+                        datasets.
+                    </p>
+                </li>
+                <li>
+                    <h3>Aritifical Intelligence</h3>
+                    <p>
+                        I like playing around with different ways to make AI models from scratch, including both
+                        neural-network-
+                        based ones, and otherwise.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="h2-container">
+                <h2>Work experience</h2>
+                <a href="#top" class="back-to-top">⇡</a>
+            </div>
+            <div class="table-container">
+                <ul>
+                    <li>
+                        <h3>Geo-location operations leader</h3>
+                    </li>
+                    <ul>
+                        <li><b>Period: </b>2021</li>
+                        <li><b>Company: </b><a href="https://www.vatanzarin.com/">VatanZarin</a></li>
+                        <li><b>Location: </b>Tabriz, Iran</li>
+                        <p>
+                            Led a 7-person team responsible for traversing the
+                            entire city of Tabriz, interviewing every shop-owner, big and small, and
+                            making detailed documents of their businesses; I utilized the now
+                            discontinued <a href="https://en.wikipedia.org/wiki/Google_Maps#My_Maps">Google My Maps</a>
+                            to partition
+                            the city into nearly
+                            a hundred
+                            areas and assigned each one to a team member, including myself.</p>
+                    </ul>
+                    <li>
+                        <h3>Freelancing and tutoring</h3>
+                    </li>
+                    <ul>
+                        <li><b>Period: </b>2019 – 2021</li>
+                        <li><b>Company: </b>Self-employed</li>
+                        <li><b>Location: </b>Iran</li>
+                        <p>With <a href="https://en.wikipedia.org/wiki/Covid_19_pandemic">the
+                                pandemic</a> having
+                            reshaped
+                            education and some jobs,
+                            opportunities for remote work were created. Being a member of <a
+                                href="https://t.me/freelancer_job">the
+                                Freelancer community on Telegram</a>, I seized many such opportunities,
+                            and cultivated a sizable client-base that comprised almost entirely of
+                            computer engineering/science students from all over Iran, and worked
+                            exclusively from home, albeit with hectic hours and unpredictable pay.
+                        </p>
+                    </ul>
+                    <li>
+                        <h3>Tutoring high-school mathematics</h3>
+                    </li>
+                    <ul>
+                        <li><b>Period: </b>2016</li>
+                        <li><b>Company: </b>Self-employed</li>
+                        <li><b>Location: </b>Tabriz, Iran</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="education">
+            <div class="h2-container">
+                <h2>Education</h2>
+                <a href="#top" class="back-to-top">⇡</a>
+            </div>
+            <ul>
+                <li>
+                    <h3>Master's degree</h3>
+                </li>
+                <ul>
+                    <li><b>Course: </b><a href="https://corsi.unige.it/en/corsi/11160">Computer Engineering</a></li>
+                    <li><b>Track: </b>Software Platforms and Cybersecurity</li>
+                    <li><b>Institute: </b><a href="https://unige.it/">University of Genoa</a>, Italy</li>
+                    <li><b>Year: </b>2023 – Present</li>
+                </ul>
+                </li>
+                <li>
+                    <h3>Bachelor's degree</h3>
+                </li>
+                <ul>
+                    <li><b>Course: </b><a
+                            href="https://ece.tabrizu.ac.ir/en/page/5015/department-of-computer-engineering">Computer
+                            Engineering</a></li>
+                    <li><b>Track: </b>Hardware Engineering</li>
+                    <li><b>Institute: </b><a href="https://tabrizu.ac.ir/">University of Tabriz</a>, Iran</li>
+                    <li><b>Year: </b>2016 – 2021</li>
+                    <li><b>GPA: </b>15.13</li>
+                    <li><b>Thesis: </b>NiLeX: a Nilic lexer generator</li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section" id="languages">
+            <div class="h2-container">
+                <h2>Languages</h2>
+                <a href="#top" class="back-to-top">⇡</a>
+            </div>
+            <ul>
+                <li>English – Fluent (IELTS 7.5)</li>
+                <li><a href="https://en.wikipedia.org/wiki/Persian_language">Persian</a> – Native</li>
+                <li><a href="https://en.wikipedia.org/wiki/Azerbaijani_language">Azerbaijani</a> – Native</li>
+                <li>Italian – Beginner</li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <div class="h2-container">
+                <h2>Contact information</h2>
+                <a href="#top" class="back-to-top">⇡</a>
+            </div>
+            <p>Write me at <a href="mailto://i@smmh.it">i@smmh.it</a>, or follow me on <a
+                    href="https://github.com/smm-h">GitHub</a>.</p>
+        </div>
+        <br>
+        <br>
+        <p class="footer">Last updated on April 27th, 2025</p>
+    </div>
+</body>
+
+</html>
