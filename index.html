@@ -31,18 +31,27 @@
             margin: 0em auto;
         }
 
-        h1,
-        h2,
-        h3 {
+
+        h1 {
             color: #333;
+            font-size: 1.8em;
+            font-weight: 100;
+            font-family: 'Special Gothic Expanded One', sans-serif;
+            font-optical-sizing: auto;
+            line-height: 1;
+            letter-spacing: -0.05em;
         }
 
         h2 {
+            color: #333;
             text-decoration: 0.2em underline solid var(--accent-color);
-            margin-bottom: 0;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            border-bottom: 1px dotted var(--accent-color);
         }
 
         h3 {
+            color: #333;
             margin-bottom: 0.5em;
             border-bottom: 1px dotted rgba(127, 127, 127, 0.5);
             text-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.2);
@@ -102,56 +111,15 @@
             }
         }
 
-        h1 {
-            font-size: 1.8em;
-            font-weight: 100;
-            font-family: 'Special Gothic Expanded One', sans-serif;
-            font-optical-sizing: auto;
-            line-height: 1;
-            letter-spacing: -0.05em;
-        }
-
         ul {
             padding-left: 2em;
             list-style-type: square
-        }
-
-        .h2-container {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            border-bottom: 1px dotted var(--accent-color);
-            margin-bottom: 2em;
-        }
-
-        .back-to-top {
-            /* font-size: smaller; */
-            text-decoration: none;
-            padding: 1em;
-            padding-top: 0;
-            padding-bottom: 0;
-            outline: 1px dotted color-mix(in srgb, var(--link-color) 25%, transparent);
         }
 
         .footer {
             text-align: center;
             font-size: small;
             color: rgba(127, 127, 127, 0.5);
-        }
-
-        /* #summary {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-            border-left: 0.25em dotted rgba(127, 127, 127, 0.25);
-            border-right: 0.25em dotted rgba(127, 127, 127, 0.25);
-        } */
-
-        #summary a {
-            text-decoration: none;
-        }
-
-        #summary b {
-            font-weight: 500;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -189,7 +157,6 @@
 
         <div class="header">
             <div class="profile-pic">
-                <!-- <img src="file:///run/user/1000/doc/f2de84b6/pic.jpg" alt="Profile picture"> -->
                 <img src="pic.jpg" alt="Profile picture">
             </div>
             <div class="profile-details">
@@ -197,70 +164,111 @@
                     <h1>Seyed Mohammad Mahdi Hosseini</h1>
                 </div>
                 <div class="subtitle">
-                    <div><a href="mailto://i@smmh.it">i@smmh.it</a></div>
-                    <div><a href="https://github.com/smm-h">github/smm-h</a></div>
-                    <div>M.Sc. in C.E.</div>
+                    <div>Software engineer</div>
                     <div>Genoa, Italy</div>
+                    <div><a href="mailto://i@smmh.it">i@smmh.it</a></div>
+                    <div><a href="https://github.com/smm-h">github.com/smm-h</a></div>
                 </div>
             </div>
         </div>
         <br>
 
-        <div class="section" id="summary">
-            <p>My name is Mahdi, and I am a <b>27</b> y/o <a href="#education">studying ⇣</a> <b>CE</b> in
-                UniGE. I was
-                born in Iran, and
-                when I was 11, I taught myself programming. Today, I live in Italy, and I am
-                actively <b>searching</b>
-                for an opportunity to put my <a href="#skills">skills ⇣</a> to work. I speak <b>three</b> <a
-                    href="#languages">languages ⇣</a> fluently, and I am learning <b>Italian</b>. My favorite
-                programming language is <b>Kotlin</b>, and I am also <a href="#projects">experienced
-                    ⇣</a> in
-                other technologies. I am passionate about
-                writing readable, modular, and <b>maintainable</b> code to create useful, beautiful, and <b>scalable</b>
-                software for nearly all platforms.</p>
+        <div>
+            <p>My name is Mahdi, I am 27 y/o, and I am studying for my master's degree in Computer Engineering at UniGe.
+                I was born in Iran and when I was 11 I taught myself programming. Now, I am
+                passionate about writing readable and modular code to create scalable software, and I am actively
+                searching for an opportunity to put my skills to work.
+            </p>
         </div>
 
-        <div class="section" id="projects">
-            <div class="h2-container">
-                <h2>Projects</h2>
-                <a href="#top" class="back-to-top">⇡</a>
-            </div>
-            <p>Over the years I've made many programs and games for desktop as well as Android. Here are a few:</p>
+        <div>
+            <h2>Skills</h2>
             <ul>
-                <li><b>Mathpad</b>: mathematical framework for rendering equations, plotting, and solving problems</li>
-                <li><b>Neurarium</b>: neural networks from scratch, Kotlin</li>
-                <li><b>Mage</b>: cross-platform game engine, Kotlin</li>
-                <li><b>Nitron</b>: DBMS with novel features, Python</li>
-                <li><b>NiLeX</b>: lexer generator, Python</li>
-                <li><b>Kotson</b>: JSON library for Kotlin</li>
-                <li>Telegram bot engine, Kotlin</li>
-                <li>Markdown to HTML converter, Kotlin</li>
+                <li><b>Languages:</b> Kotlin, Java, Python, TypeScript, JavaScript, GML</li>
+                <li><b>Frameworks & libraries:</b> Spring, Django, Flask, Express.js</li>
+                <li><b>DevOps, CI/CD:</b> GitHub Actions, GitLab CI
+                <li><b>Virtualization:</b> Docker, Ansible, Vagrant, Docker Swarm, Firecracker</li>
+                </li>
+                <li><b>Cloud:</b> AWS (EC2, S3, Lambda), GCP</li>
+                <li><b>Databases:</b> PostgreSQL, MongoDB, Redis</li>
+                <li><b>Other:</b> Git, Gradle, Linux Debian, Markdown, YAML, HTTP, REST APIs, JTest, Agile methodologies
+                </li>
+                <!-- <li><b>Other:</b> Telegram Bot API</li> -->
+                <!-- <li><b>Foundations:</b> relational alegbra</li> -->
+                <!-- <li><b>FOSS:</b> LibreOffice</li> -->
+                <!-- <li><b>Tools & platforms</b></li> -->
             </ul>
         </div>
 
-        <div class="section" id="skills">
-            <div class="h2-container">
-                <h2>Skills</h2> <a href="#top" class="back-to-top">⇡</a>
-            </div>
+        <div>
+            <h2>Projects</h2>
             <ul>
-                <li>Languages: Kotlin, Java, Python, TypeScript, GML</li>
-                <li>Frameworks: Django, Flask, Express.js</li>
-                <li>DevOps: Docker, Ansible, Docker Swarm, CI/CD (GitHub Actions, GitLab CI)</li>
-                <li>Cloud: AWS (EC2, S3, Lambda), GCP</li>
-                <li>Databases: PostgreSQL, MongoDB, Redis</li>
-                <li>Other: Git, Gradle, Linux Debian, Markdown, YAML, HTTP, REST APIs, JTest, Agile methodologies</li>
-                <li>Other: Telegram Bot API</li>
-                <li>Foundations: relational alegbra</li>
-                <li>FOSS: LibreOffice</li>
+                <!-- <li>
+                    <h3>Project title</h3>
+                    <ul>
+                        <li>Description</li>
+                        <li><b>Platforms: </b>?</li>
+                        <li><b>Technologies used: </b>?</li>
+                    </ul>
+                </li> -->
+                <li>
+                    <h3><i>Mathpad</i></h3>
+                    <ul>
+                        <li>Mathematical framework for rendering equations, plotting, and solving problems</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><i>Neurarium</i></h3>
+                    <ul>
+                        <li>Neural networks from scratch</li>
+                        <li><b>Technologies used: </b>Kotlin</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><i>Mage</i></h3>
+                    <ul>
+                        <li>Cross-platform game engine</li>
+                        <li><b>Technologies used: </b>Kotlin</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><i>Nitron</i></h3>
+                    <ul>
+                        <li>DBMS</li>
+                        <li><b>Technologies used: </b>Python</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><i>NiLeX</i></h3>
+                    <ul>
+                        <li>Lexer generator</li>
+                        <li><b>Technologies used: </b>Python</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><i>Kotson</i></h3>
+                    <ul>
+                        <li>JSON library</li>
+                        <li><b>Technologies used: </b>Kotlin</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Telegram bot engine</h3>
+                    <ul>
+                        <li><b>Technologies used: </b>Kotlin</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Markdown to HTML converter</h3>
+                    <ul>
+                        <li><b>Technologies used: </b>Kotlin</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
-        <div class="section">
-            <div class="h2-container">
-                <h2>Hobbies and interests</h2>
-                <a href="#top" class="back-to-top">⇡</a>
-            </div>
+        <div>
+            <h2>Hobbies & interests</h2>
             <ul>
                 <li>
                     <h3>Programming language design</h3>
@@ -313,11 +321,41 @@
             </ul>
         </div>
 
-        <div class="section">
-            <div class="h2-container">
-                <h2>Work experience</h2>
-                <a href="#top" class="back-to-top">⇡</a>
-            </div>
+        <div>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>M.Sc. in Computer Engineering</h3>
+                </li>
+                <ul>
+                    <li><b>Year: </b>2023 – Present <pan style="margin-left: 0.5em; font-size: smaller; color: gray;">
+                            Expected to
+                            graduate by September
+                            2026</pan>
+                    </li>
+                    <li><b>Institute: </b><a href="https://unige.it/">University of Genoa</a></li>
+                    <li><b>Location: </b>Genoa, Italy</li>
+                    <li><b>Focus: </b>Software Platforms and Cybersecurity</li>
+                    <li><a href="https://corsi.unige.it/en/corsi/11160">Course details</a></li>
+                </ul>
+                </li>
+                <li>
+                    <h3>B.Sc. in Computer Engineering</h3>
+                </li>
+                <ul>
+                    <li><b>Year: </b>2016 – 2021</li>
+                    <li><b>Institute: </b><a href="https://tabrizu.ac.ir/">University of Tabriz</a></li>
+                    <li><b>Location: </b>Tabriz, Iran</li>
+                    <li><b>Focus: </b>Hardware Engineering</li>
+                    <li><b>GPA: </b>15.13</li>
+                    <li><b>Thesis: </b>NiLeX: a Nilic lexer generator</li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Work experience</h2>
             <div class="table-container">
                 <ul>
                     <li>
@@ -368,63 +406,25 @@
             </div>
         </div>
 
-        <div class="section" id="education">
-            <div class="h2-container">
-                <h2>Education</h2>
-                <a href="#top" class="back-to-top">⇡</a>
-            </div>
-            <ul>
-                <li>
-                    <h3>Master's degree</h3>
-                </li>
-                <ul>
-                    <li><b>Course: </b><a href="https://corsi.unige.it/en/corsi/11160">Computer Engineering</a></li>
-                    <li><b>Track: </b>Software Platforms and Cybersecurity</li>
-                    <li><b>Institute: </b><a href="https://unige.it/">University of Genoa</a>, Italy</li>
-                    <li><b>Year: </b>2023 – Present</li>
-                </ul>
-                </li>
-                <li>
-                    <h3>Bachelor's degree</h3>
-                </li>
-                <ul>
-                    <li><b>Course: </b><a
-                            href="https://ece.tabrizu.ac.ir/en/page/5015/department-of-computer-engineering">Computer
-                            Engineering</a></li>
-                    <li><b>Track: </b>Hardware Engineering</li>
-                    <li><b>Institute: </b><a href="https://tabrizu.ac.ir/">University of Tabriz</a>, Iran</li>
-                    <li><b>Year: </b>2016 – 2021</li>
-                    <li><b>GPA: </b>15.13</li>
-                    <li><b>Thesis: </b>NiLeX: a Nilic lexer generator</li>
-                </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section" id="languages">
-            <div class="h2-container">
-                <h2>Languages</h2>
-                <a href="#top" class="back-to-top">⇡</a>
-            </div>
+        <div>
+            <h2>Languages</h2>
             <ul>
                 <li>English – Fluent (IELTS 7.5)</li>
                 <li><a href="https://en.wikipedia.org/wiki/Persian_language">Persian</a> – Native</li>
                 <li><a href="https://en.wikipedia.org/wiki/Azerbaijani_language">Azerbaijani</a> – Native</li>
-                <li>Italian – Beginner</li>
+                <li>Italian – Intermediate</li>
             </ul>
         </div>
 
-        <div class="section" id="contact">
-            <div class="h2-container">
-                <h2>Contact information</h2>
-                <a href="#top" class="back-to-top">⇡</a>
-            </div>
-            <p>Write me at <a href="mailto://i@smmh.it">i@smmh.it</a>, or follow me on <a
-                    href="https://github.com/smm-h">GitHub</a>.</p>
+        <div>
+            <h2>Contact information</h2>
+            <p>Write me at <a href="mailto://i@smmh.it">i@smmh.it</a>, follow me on <a
+                    href="https://github.com/smm-h">GitHub</a>, or check out my activity on <a
+                    href="https://stackoverflow.com/users/9115712/smmh">StackOverflow</a>.</p>
         </div>
         <br>
         <br>
-        <p class="footer">Last updated on April 27th, 2025</p>
+        <p class="footer">Last updated on May 20th, 2025</p>
     </div>
 </body>
 
